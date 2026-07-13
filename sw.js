@@ -1,4 +1,4 @@
-const CACHE_NAME = 'korea-trip-v5';
+const CACHE_NAME = 'korea-trip-v7';
 const urlsToCache = [
   './',
   './index.html',
