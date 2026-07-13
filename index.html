@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korea Trip — Gyeongju • Busan • Seoul</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #334155; background-color: #f8fafc; margin: 0; padding: 0; }
+    .header { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); color: white; padding: 60px 20px; text-align: center; }
+    .header h1 { margin: 0 0 10px 0; font-size: clamp(1.5rem, 5vw, 2.5rem); }
+    .header p { margin: 0; font-size: 1.1rem; opacity: 0.9; }
+    .container { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
+    .route-card { background: white; border-radius: 16px; padding: 30px; margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.08); border-top: 4px solid #2563eb; }
+    .route-card h2 { margin-top: 0; color: #1e293b; }
+    .route-card p { margin: 8px 0; color: #475569; }
+    .route-card ul { margin: 10px 0; padding-left: 20px; color: #475569; }
+    .route-card li { margin-bottom: 6px; }
+    .btn-group { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.2s; border: none; cursor: pointer; }
+    .btn-primary { background: #2563eb; color: white; }
+    .btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); }
+    .btn-secondary { background: #f1f5f9; color: #475569; }
+    .btn-secondary:hover { background: #e2e8f0; }
+    .dates-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 15px; }
+    .date-item { background: #f8fafc; padding: 12px; border-radius: 8px; text-align: center; }
+    .date-item .day { font-weight: 700; color: #2563eb; font-size: 1.1rem; }
+    .date-item .label { font-size: 0.85rem; color: #64748b; }
+    .quick-tips { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 15px; border-radius: 0 8px 8px 0; margin-top: 15px; }
+    .quick-tips h4 { margin: 0 0 8px 0; color: #1e3a8a; }
+    .quick-tips ul { margin: 0; padding-left: 18px; color: #475569; }
+    .quick-tips li { margin-bottom: 4px; font-size: 0.9rem; }
+    .status-badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+    .status-confirmed { background: #dcfce7; color: #166534; }
+    .status-pending { background: #fef9c3; color: #854d0e; }
+    .status-booked { background: #dbeafe; color: #1e40af; }
+    .footer { text-align: center; padding: 30px 20px; color: #94a3b8; font-size: 0.85rem; }
+    @media (max-width: 600px) { .btn-group { flex-direction: column; } .dates-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Korea Trip — Gyeongju • Busan • Seoul</h1>
+  <p>July 3–14, 2025 · ICML Conference · No intense hiking</p>
+</div>
+
+<div class="container">
+
+  <div class="route-card">
+    <h2><i class="fa-solid fa-route"></i> Route Overview</h2>
+    <p><b>One-way flow:</b> Gyeongju → Busan → Seoul → Incheon Airport</p>
+    <div class="dates-grid">
+      <div class="date-item"><div class="day">Jul 3</div><div class="label">Gyeongju Arrival</div></div>
+      <div class="date-item"><div class="day">Jul 4</div><div class="label">Gyeongju → Busan</div></div>
+      <div class="date-item"><div class="day">Jul 5</div><div class="label">Busan → Seoul</div></div>
+      <div class="date-item"><div class="day">Jul 5–12</div><div class="label">ICML Conference</div></div>
+      <div class="date-item"><div class="day">Jul 12</div><div class="label">Seoul — Han River</div></div>
+      <div class="date-item"><div class="day">Jul 13</div><div class="label">Seoul — Museums & Palaces</div></div>
+      <div class="date-item"><div class="day">Jul 14</div><div class="label">Secret Garden → Departure</div></div>
+    </div>
+  </div>
+
+  <div class="route-card">
+    <h2><i class="fa-solid fa-hotel"></i> Hotels</h2>
+    <ul>
+      <li><b>Gyeongju Hanok Guesthouse</b> — Jul 3 (1 night) <span class="status-badge status-confirmed">Confirmed</span></li>
+      <li><b>Toyoko Inn Busan Jungang Station</b> — Jul 4–5 (1 night) <span class="status-badge status-confirmed">Confirmed</span></li>
+      <li><b>Grand Intercontinental COEX</b> — Jul 5–12 (7 nights) <span class="status-badge status-booked">ICML Rate</span></li>
+      <li><b>Hotel Junoh (Jongno/Anguk)</b> — Jul 12–14 (2 nights) <span class="status-badge status-confirmed">Confirmed</span></li>
+    </ul>
+  </div>
+
+  <div class="route-card">
+    <h2><i class="fa-solid fa-plane-departure"></i> Transport</h2>
+    <ul>
+      <li><b>Incheon → Gyeongju:</b> Airport Intercity Bus (~2h15m, ₩22k–28k)</li>
+      <li><b>Gyeongju → Busan:</b> Intercity Bus (~1h45m, ₩10k–15k)</li>
+      <li><b>Busan → Seoul:</b> Intercity Bus Nambu Terminal (~4h, purchased)</li>
+      <li><b>Seoul → Incheon:</b> AREX Express Train (~43 min, ₩9,500)</li>
+    </ul>
+  </div>
+
+  <div class="route-card">
+    <h2><i class="fa-solid fa-ticket"></i> Book in Advance</h2>
+    <ul>
+      <li><b>Airport Bus to Gyeongju</b> — Buy at Incheon T1 Intercity Bus Terminal <span class="status-badge status-confirmed">Booked</span></li>
+      <li><b>Changdeokgung Secret Garden Tour</b> — 6 days ahead, Jul 14 at 9:00 AM <span class="status-badge status-confirmed">Booked</span></li>
+      <li><b>Mipo → Cheongsapo Boardwalk</b> — Free, no booking needed <span class="status-badge status-pending">No action</span></li>
+    </ul>
+  </div>
+
+  <div class="quick-tips">
+    <h4><i class="fa-solid fa-lightbulb"></i> Quick Tips</h4>
+    <ul>
+      <li><b>T-money card:</b> ₩2,500 deposit + ₩25,000 credit (convenience stores)</li>
+      <li><b>Naver Maps:</b> Essential for navigation — download offline maps</li>
+      <li><b>KakaoTalk:</b> Get it for taxi hailing and translation</li>
+      <li><b>July heat:</b> No intense hiking — all routes are flat or shaded</li>
+    </ul>
+  </div>
+
+  <div class="btn-group">
+    <a href="tour_package.html" class="btn btn-primary"><i class="fa-solid fa-calendar-days"></i> Full Itinerary</a>
+    <a href="ticketing.html" class="btn btn-secondary"><i class="fa-solid fa-ticket"></i> Book in Advance</a>
+  </div>
+
+</div>
+
+<div class="footer">
+  Korea Trip Itinerary · Gregory · July 2025
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
